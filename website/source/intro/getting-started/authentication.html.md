@@ -61,7 +61,7 @@ $ vault token-revoke c2c2fbd5-2893-b385-6fa5-30050439f698
 Success! Token revoked if it existed.
 ```
 
-In a previous section, we use the `vault revoke` command. This command
+In a previous section, we used the `vault revoke` command. This command
 is only used for revoking _secrets_. For revoking _tokens_, the
 `vault token-revoke` command must be used.
 
@@ -87,7 +87,7 @@ These identities are tied back to a set of access policies, just like tokens.
 
 Vault supports other authentication backends in order to make authentication
 easiest for your environment. For example, for desktop environments,
-private key or GitHub based authentication may be easiest. For server
+private key or GitHub-based authentication may be easiest. For server
 environments, some shared secret may be best. Auth backends give you
 flexibility to choose what authentication you want to use.
 
@@ -155,7 +155,7 @@ Disabled auth provider at path 'github'!
 
 If you ran the above, you'll probably find you can't access your Vault
 anymore unless you have another root token, since it invalidated your
-own session since we authenticated with GitHub above. Since we're still
+own session that we authenticated with GitHub above. Since we're still
 operating in development mode, just restart the dev server to fix this.
 
 ## Next
